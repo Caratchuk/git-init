@@ -125,9 +125,3 @@ docker run -p 5000:5000 -v estoque_data:/app/data estoque-api
    `docker run -d -p 80:5000 estoque-api`.
 5. Libere a porta 80 (ou 5000) no security group / firewall da instância.
 6. Acesse `http://<ip-publico-da-instancia>/api/health` para confirmar.
-
-## Próximos passos possíveis
-
-- Trocar SQLite por PostgreSQL (bastaria reescrever `database.py`).
-- Adicionar autenticação (JWT) nas rotas de escrita.
-- Adicionar paginação em `GET /api/produtos`.
